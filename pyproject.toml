@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "simple-click-entrypoint"
+authors = [{name = "Juan Luis Cano Rodríguez", email = "hello@juanlu.space"}]
+dependencies = [
+  "click",
+]
+dynamic = ["version", "description"]
+
+[project.scripts]
+wicked-entrypoint = "simple_click_entrypoint.ep:main"
+
+[tool.flit.module]
+name = "simple_click_entrypoint"
