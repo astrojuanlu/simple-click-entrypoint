@@ -12,14 +12,6 @@ except AttributeError:
 
 
 @click.command()
-def main():
+def run():
     result = 1 + 1
     logger.info(result)
-
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-
-    main()
-
-    logger.info("End of direct module execution")

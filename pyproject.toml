@@ -11,7 +11,7 @@ dependencies = [
 dynamic = ["version", "description"]
 
 [project.scripts]
-wicked-entrypoint = "simple_click_entrypoint.ep:main"
+wicked-entrypoint = "simple_click_entrypoint.__main__:main"
 
 [tool.flit.module]
 name = "simple_click_entrypoint"
